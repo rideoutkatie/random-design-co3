@@ -121,6 +121,10 @@ body {
   background-color: #000;
   color: #fff;
   padding: 1em;
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
 }
 
 
@@ -136,9 +140,44 @@ body {
   color: white;
 }
 
+.grid {
+  border: 10px solid;
+  overflow: auto; 
+
+}
+/*clear fix ---overflow auto on container float=makes boarder wrap around everything*/ 
+.projects {
+  border: 1px solid red;
+  width: 33.333333%;
+  height: 7em;
+  float: left;
+  position: relative;
+  background: hsla(0, 100%, 50%, .25);
+
+}
 
 
+.project-no {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
 
+img {
+  max-width: 100%;
+
+}
+
+.project-1-bg {
+  border: 1px solid blue;
+  display: block;
+  position: relative;
+  z-index:-10;
+
+}
 
 
 
