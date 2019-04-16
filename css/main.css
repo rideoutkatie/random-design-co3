@@ -107,9 +107,7 @@ textarea {
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+
 
 body {
   font-family: sans-serif;
@@ -141,15 +139,13 @@ body {
 }
 
 .grid {
-  border: 10px solid;
+  border: 10px black solid;
   overflow: auto; 
 
 }
 /*clear fix ---overflow auto on container float=makes boarder wrap around everything*/ 
 .projects {
-  border: 1px solid red;
   width: 33.333333%;
-  height: 7em;
   float: left;
   position: relative;
   background: hsla(0, 100%, 50%, .25);
@@ -167,15 +163,16 @@ body {
 }
 
 img {
-  max-width: 100%;
+
+  outline: white solid 2px; 
 
 }
 
-.project-1-bg {
-  border: 1px solid blue;
+.project-1-bg, .project-2-bg, .project-3-bg, .project-4-bg, .project-5-bg, .project-6-bg, .project-7-bg {
+  max-width: 100%;
   display: block;
   position: relative;
-  z-index:-10;
+  z-index: -10;
 
 }
 
