@@ -163,12 +163,11 @@ img{
     position: relative;
 }
 
- #jumbotron-bg{
+ .jumbotron-bg {
   display: block;
   position: relative;
-    max-width: 100%;    
+     width: 100%;    
   z-index: -10;
-     
 }
 
 .jumbotron__content {
@@ -208,66 +207,50 @@ img{
 }
  
 
-}
-/*
-.clearfix {
-  overflow: auto; 
-*/
-}
 
 
-
-  
-.projects a {
-  width: 50%;
-  float: left;
-    display: flex;
+.portfolio {
+  display: flex;
     flex-wrap: wrap;
-  position: relative;
-  background: hsla(300, 50%, 100%, .7);*/
+}
 
-
+.portfolio > a{
+    flex: 1 1 50%;  
+    max-width: 50%;
 }
 
 
-.project-no p{
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+.project-thumb{
+    position: relative;
+    background-color: hsla(0,100%,100%,.75);
+    border-color: white solid 2px;
 }
 
-.projects img {
-  max-width: 100%;
-
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-.projects a:hover {
-  background: none;
-  color: white;
+.project-thumb:hover{
+    background-color: hsla(0, 0%, 0%, .5)
 }
 
 
- .project-1-bg, .project-2-bg, .project-3-bg, .project-4-bg, .project-5-bg, .project-6-bg, .project-7-bg, .project-8-bg, .project-9-bg, .project-10-bg  {
-  
-  
- display: flex;
-flex-wrap: wrap;
-  position: relative;
-  background: hsla(300, 50%, 100%, .7);
-  border: white solid 2px; 
+.project-thumb img{
+    position: relative;
+    z-index: -10;
+   
 }
 
-
-
+.project-thumb h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    text-align: center;
+    color: #000;
 }
+
+.project-thumb:hover h3{
+    color: #fff;
+}
+
 
 .footer p {
   text-align: center;
@@ -276,15 +259,8 @@ flex-wrap: wrap;
 
 
 
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-}
 
-.grid > a{
-    1 1 50%;
-    max-width: 50%;
-}
+
 
 
  /* ==========================================================================
